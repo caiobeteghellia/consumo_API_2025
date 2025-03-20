@@ -16,7 +16,7 @@ class ETL:
 etl = ETL()
 print('\n\nConsumo da API Pokemon')
 print(40 * '*')
-etl.consume(1, API_Pokemon())
+tl.consume(1, API_Pokemon()e)
 etl.consume(2)
 
 print('\n\nConsumo da API Rick and Morty')
