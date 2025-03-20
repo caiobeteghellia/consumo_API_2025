@@ -11,6 +11,8 @@ class ETL:
         else:
             print('Falhou')
 
+            
+
 etl = ETL()
 print('\n\nConsumo da API Pokemon')
 print(40 * '*')
