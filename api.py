@@ -40,7 +40,6 @@ class API_Rick_Morty(API_consumer):
             pass
 
 class API_Star_Wars(API_consumer):
-    ''' The universe of Star Wars '''
     def __init__(self):
         self.__URL = 'https://swapi.dev/api/people/'
     
@@ -66,6 +65,11 @@ class API_Ice_and_Fire(API_consumer):
         return self.__URL
 
     def extract(self, id):
-        # Atividade 5, que resultará o quarto commit
-        pass
+        URL = self.URL + str(id)
+        try:
+            dado = requests.get(URL).json()
+            return ((dado.get('name'), dado.get('tvSeries')))
+        except:
+            pass
+    
  
